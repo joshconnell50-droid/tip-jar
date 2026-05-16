@@ -1,0 +1,10 @@
+{
+  "name": "tipjar",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0",
+    "stripe": "^17.0.0"
+  }
+}
