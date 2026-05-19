@@ -32,7 +32,6 @@ export default async () => {
       "Cache-Control": "no-store, max-age=0",
       "Access-Control-Allow-Origin": "*",
     },
-    },
   });
 };
 
