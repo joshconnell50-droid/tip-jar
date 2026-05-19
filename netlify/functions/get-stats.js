@@ -28,9 +28,10 @@ export default async () => {
     status: 200,
     headers: {
       "Content-Type": "application/json",
-      // Short cache so the number feels live but we don't hammer Blobs.
-      "Cache-Control": "public, max-age=2",
+      // No cache — we want fresh numbers on every fetch, especially after a tip.
+      "Cache-Control": "no-store, max-age=0",
       "Access-Control-Allow-Origin": "*",
+    },
     },
   });
 };
