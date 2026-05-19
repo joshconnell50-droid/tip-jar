@@ -20,21 +20,4 @@ export default async () => {
     totalDollars: (stats.totalCents / 100).toFixed(2),
     tipCount: stats.tipCount,
     countryCount: stats.countries.length,
-    lastTipAt: stats.lastTipAt,
-    lastTipCountry: stats.lastTipCountry,
-  };
-
-  return new Response(JSON.stringify(body), {
-    status: 200,
-    headers: {
-      "Content-Type": "application/json",
-      // No cache — we want fresh numbers on every fetch, especially after a tip.
-      "Cache-Control": "no-store, max-age=0",
-      "Access-Control-Allow-Origin": "*",
-    },
-  });
-};
-
-export const config = {
-  path: "/api/stats",
-};
+    lastTipAt: stat
